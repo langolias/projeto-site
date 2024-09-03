@@ -144,6 +144,12 @@ main {
 #mais {
     background-color: var(--div-background);
     padding: 5rem;
+    padding-bottom: 0;
+
+    h1{
+        font-size: 70px; color: #FDFFF3; font-weight: 100; font-style: italic;
+    }
+
 }
 
 #mais .container {
@@ -162,7 +168,7 @@ main {
         max-width: 90%;
         display: flex;
         align-items: center;
-        font-size: 30px;
+        font-size: 20px;
         color: var(--dark-back-color);
 
         i#teste {
@@ -181,6 +187,7 @@ main {
 #estrutura {
     background-color: var(--div-background);
     padding: 5rem;
+    padding-top: 0;
 
     h1 {
         color: var(--dark-back-color);
@@ -211,7 +218,7 @@ main {
         max-width: 90%;
         display: flex;
         align-items: center;
-        font-size: large;
+        font-size: 20px;
         color: var(--dark-back-color);
 
         i#teste {
@@ -268,8 +275,8 @@ main {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-row: auto auto;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     margin-right: 5rem;
     margin-left: 5rem;
     padding-bottom: 0;
@@ -277,6 +284,10 @@ main {
 
     img {
         max-width: 100%;
+        width: 400px;
+        height: 300px;
+        object-fit:cover;
+        border-radius: 15px;
     }
 }
 
@@ -472,6 +483,7 @@ main {
         color: var(--dark-back-colorr);
         font-size: 80px;
         font-style: italic;
+        font-weight: 100; margin-bottom: 5rem; color: #FDFFF3;
     }
 
     .container-lazer {
@@ -578,7 +590,7 @@ body.dark-mode {
     --footer-text-color: #333;
 }
 
-.color-toggle-label {
+.color-toggle {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
@@ -590,7 +602,7 @@ body.dark-mode {
     text-align: center;
 }
 
-.color-toggle-label:hover {
+.color-toggle:hover {
     background-color: #555;
 }
 
@@ -603,7 +615,6 @@ body.dark-mode {
     #titulo-2 {
         font-size: 1.5rem;
     }
-
 
 }
 
@@ -642,6 +653,13 @@ body.dark-mode {
 
         .teste {
             padding: 0;
+        }
+    }
+
+    #fotos .container2 {
+        img{
+            width: 300px;
+            height: 200px;
         }
     }
 

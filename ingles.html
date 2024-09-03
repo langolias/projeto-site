@@ -16,6 +16,7 @@
 
 <body>
     <header>
+
         <lang-select>
             <ul>
                 <li><a href="index.html">PT-BR</a></li>
@@ -33,30 +34,29 @@
                 <li><a href="frances.html">FR</a></li>
             </ul>
         </lang-select>
-
         <nav>
             <ul>
-                <li><button onclick="guia('inicio');">INÍCIO</button></li>
-                <li><button onclick="guia('sobre');">SOBRE</button></li>
-                <li><button onclick="guia('estrutura');">ESTRUTURA</button></li>
-                <li><button onclick="guia('fotos');">FOTOS</button></li>
-                <li><button onclick="guia('bio');">BIODIVERSIDADE</button></li>
-                <li><button onclick="guia('atividades');">ATIVIDADES</button></li>
-                <li><button onclick="guia('funcionamento');">FUNCIONAMENTO</button></li>
+                <li><button onclick="guia('inicio');">HOME</button></li>
+                <li><button onclick="guia('sobre');">ABOUT</button></li>
+                <li><button onclick="guia('fotos');">PHOTOS</button></li>
+                <li><button onclick="guia('bio');">BIODIVERSITY</button></li>
+                <li><button onclick="guia('atividades');">ACTIVITIES</button></li>
+                <li><button onclick="guia('funcionamento');">OPENING HOURS</button></li>
                 <li>
                     <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
-                    <label>
-                        <input type="checkbox" id="color-toggle">
-                    </label>
+
+                    <input type="checkbox" id="color-toggle">
+
                 </li>
             </ul>
+
         </nav>
     </header>
 
     <main>
         <div id="inicio">
             <div>
-                <h1 id="titulo-inicio">Parque Ecológico Olhos d'Água</h1>
+                <h1 id="titulo-inicio">Olhos D’Água Ecological Park</h1>
                 <img id="tree" src="./imagens/tree2.png" alt="Tree" />
             </div>
             <img id="img-inicio" src="./imagens/Imagem-do-Parque-Olhos-dagua.png" alt="Park Image" />
@@ -64,156 +64,137 @@
 
         <div id="sobre">
             <div class="container">
-                <h1 id="titulo-2">Sobre o Parque</h1>
-                <p id="texto-2">O Parque Olhos D'Água é um lugar público para lazer e atividades ao ar livre localizado
-                    na
-                    Asa Norte, em Brasília, no Distrito Federal. É um parque ecológico, o que significa que ele foi
-                    criado
-                    para preservar a natureza e oferecer um espaço agradável para as pessoas aproveitarem a área verde e
-                    a paisagem.
+                <h1>About the Park</h1>
+                <p>Olhos D'Água Park is a public space for recreation and outdoor activities located in Asa Norte,
+                    Brasília, Federal District. As an ecological park, it was created to preserve nature and provide a
+                    pleasant area for people to enjoy green spaces and landscapes.
                 </p>
-                <p id="texto-2">O Parque Olhos D'Água foi criado em 1994 e tem uma área de 28 hectares. É um dos lugares
-                    mais
-                    visitados da região. No parque, você pode participar de muitos eventos culturais e fazer atividades
-                    físicas.
-                    Ele preserva a vegetação típica do cerrado e tem um pequeno lago. O parque é administrado pelo
-                    governo do Distrito Federal (GDF).
+                <p>Created in 1994, the park covers 28 hectares and is one of the most visited places in the area. You
+                    can participate in various cultural events and physical activities there. The park preserves the
+                    typical vegetation of the cerrado and features a small lake. It is managed by the Federal District
+                    government (GDF).
                 </p>
-                <img id="img-sobre" src="./imagens/Imagem-2.png" alt="Sobre Image" />
+                <img src="./imagens/Imagem-2.png" alt="Sobre Image" />
             </div>
         </div>
 
         <div id="mais">
-            <h1 style="font-size: 70px; color: #FDFFF3; font-weight: 100; font-style: italic;" id="titulo-2">Um pouco
-                mais da</h1>
-            <H1 style="font-size: 70px; color: #FDFFF3; font-style: italic;" id="titulo-2">
-                <p>história do parque...
-            </H1>
+            <h1>A Bit More About</h1>
+            <h1>
+                the Park's History...
+            </h1>
             <div class="container">
-                <p style="text-align: center; font-size: 30px;" id="texto-2">
+                <p style="text-align: center;">
                     <i id="teste" class="fa-solid fa-quote-left"></i>
-                    A unidade nasceu da iniciativa da comunidade local, que para chamar
-                    a atenção da sociedade e do governo para sua importância, fizeram
-                    diversas ações como passeatas pelo Eixão do Lazer e a construção, em 1993,
-                    de uma árvore de Natal feita com o lixo jogado no parque, pelo artista
-                    plástico Normando Rodrigues
+                    The park was established thanks to local community efforts. To draw attention to its importance, the
+                    community organized actions such as marches along the Eixão do Lazer and, in 1993, built a Christmas
+                    tree made of trash collected from the park, created by artist Normando Rodrigues.
                     <i class="fa-solid fa-quote-right"></i>
                 </p>
                 <img src="./imagens/Imagem-3.png" alt="Mais Image" />
                 <p></p>
-                <p style="display: flex; align-items: start;" id="texto-2">
-                    A Lei nº 556 estabeleceu que o Parque Olhos D'Água tem vários objetivos.
-                    Entre eles estão: proteger as nascentes e o lago da SCLN 414/415;
-                    preservar e recuperar a vegetação ao redor do lago; proteger a bacia
-                    do Paranoá; promover programas de observação e pesquisa sobre o meio
-                    ambiente local; garantir que as pessoas possam aproveitar o parque
-                    sem prejudicar o meio ambiente; e desenvolver atividades de educação
-                    ambiental.
+                <p style="display: flex; align-items: start;">
+                    Law No. 556 established several goals for Olhos D'Água Park, including: protecting the springs and
+                    lake of SCLN 414/415; preserving and restoring vegetation around the lake; protecting the Paranoá
+                    Basin; promoting environmental observation and research programs; ensuring that visitors can enjoy
+                    the park without harming the environment; and developing environmental education activities.
                 </p>
             </div>
         </div>
 
         <div id="estrutura">
-            <h1>Conheça o Parque Olhos d'Água</h1>
             <div class="container">
-                <p id="texto-2">A área de lazer oferece várias atrações. Você pode usar
-                    as trilhas para caminhar, aproveitar o parque infantil, fazer
-                    exercícios no circuito específico, e usar os banheiros, bebedouros e
-                    chuveiros. Também há quiosques, pistas para corrida, e bancos e
-                    cadeiras para relaxar ao sol. Além disso, o parque tem lixeiras para
-                    coleta seletiva, ajudando na separação dos resíduos.
+                <p>The park offers a range of amenities. You can use the walking trails, playground, exercise circuit,
+                    and facilities such as restrooms, drinking fountains, and showers. There are also kiosks, running
+                    tracks, and benches for relaxation. Additionally, the park has recycling bins to help with waste
+                    separation
                 </p>
-                <h1 id="titulo-2">Estrutura</h1>
-                <img id="img-sobre" src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <p id="texto-2">O parque é cercado em todo o seu redor e é supervisionado
-                    por policiais do Batalhão Florestal da Polícia Militar do Distrito
-                    Federal.
+                <h1>Park Features</h1>
+                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
+                <p>The park is fully fenced and supervised by officers from the Environmental Battalion of the Military
+                    Police of the Federal District.
                 </p>
             </div>
         </div>
 
         <div id="fotos">
             <div class="container1">
-                <h1>Fotos</h1>
-                <img id="img-sobre" src="./imagens/Imagem-4.png" alt="Sobre Image" />
+                <h1>Photos</h1>
+                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
 
             </div>
             <div class="container2">
-                <img src="./imagens/Imagem-4.png" alt="Floresta loca"/>
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
+                <img src="./imagens/FOTO1.jpg" alt="Floresta loca" />
+                <img src="./imagens/FOTO2.jpg" alt="Sobre Image" />
+                <img src="./imagens/FOTO3.jpg" alt="Sobre Image" />
+                <img src="./imagens/FOTO4.jpg" alt="Sobre Image" />
+                <img src="./imagens/FOTO5.jpg" alt="Sobre Image" />
+                <img src="./imagens/FOTO5.jpg" alt="Sobre Image" />
             </div>
         </div>
 
         <div id="video">
-            <iframe width="1128" height="634" src="https://www.youtube.com/embed/xSJKiMQd7CQ"
-                title="Parque Olhos d&#39;Água - Brasília - DF" frameborder="0"
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/LpP6jmxbdEE"
+                title="Olhos D&#39;agua Park - Virtual Tour (Audio Description)" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
 
 
         <div id="bio">
-            <h1>BIODIVERSIDADE</h1>
+            <h1>BIODIVERSITY</h1>
             <h1 style="font-weight: 100;">FLORA</h1>
             <div class="container">
-                <p id="texto-2">No parque, você encontra principalmente três tipos de vegetação: campo cerrado, 
-                    mata mesofítica e mata de galeria. Entre as plantas mais comuns, estão as árvores como 
-                    barbatimão, jacarandá-do-Cerrado, faveiro, pau-jacaré, angico e embaúba. No entanto, 
-                    em 2004, foi observado que, devido a atividades humanas, também surgiram algumas espécies 
-                    de capim, como capim braquiária, capim-elefante e capim-gordura.
+                <p>The park features three main types of vegetation: cerrado grassland, mesophytic forest, and gallery
+                    forest. Common trees include barbatimão, cerrado jacaranda, faveiro, pau-jacaré, angico, and
+                    embaúba. However, in 2004, it was noted that some grass species like brachiaria, elephant grass, and
+                    fat grass had appeared due to human activities.
                 </p>
-                <img id="img-sobre" src="./imagens/Imagem-5.png" alt="Sobre Image"/>
-                <img id="img-sobre" src="./imagens/Imagem-6.png" alt="Sobre Image"/>
+                <img src="./imagens/Imagem-5.png" alt="Sobre Image" />
+                <img src="./imagens/Imagem-6.png" alt="Sobre Image" />
                 <p></p>
-                <p style="text-align: center;" class="teste">Exemplar de cipó prata (Banisteriopsis oxyclada) encontrado no parque, em 2010</p>
-                <p style="text-align: center;" class="teste">Cipó amarelo (Cuscuta racemosa) fotografado no parque, em 2012</p>
+                <p style="text-align: center;" class="teste">Example of silver vine (Banisteriopsis oxyclada) found in
+                    the park in 2010.</p>
+                <p style="text-align: center;" class="teste">Yellow vine (Cuscuta racemosa) photographed in the park in
+                    2012.</p>
             </div>
         </div>
 
         <div id="fauna">
             <div class="container">
-                <img id="img-sobre" src="./imagens/Imagem-7.png" alt="Sobre Image"/>
+                <img src="./imagens/Imagem-7.png" alt="Sobre Image" />
                 <h1 style="font-weight: 100;">FAUNA</h1>
-                <p style="text-align: center;" class="teste">Um mico-estrela (Callithrix penicillata) em uma árvore do parque, em 2015  </p>
-                <p id="texto-2">No parque, você encontra principalmente três tipos de vegetação: campo cerrado, 
-                    mata mesofítica e mata de galeria. Entre as plantas mais comuns, estão as árvores como 
-                    barbatimão, jacarandá-do-Cerrado, faveiro, pau-jacaré, angico e embaúba. No entanto, 
-                    em 2004, foi observado que, devido a atividades humanas, também surgiram algumas espécies 
-                    de capim, como capim braquiária, capim-elefante e capim-gordura.
+                <p style="text-align: center;" class="teste">Um mico-estrela (Callithrix penicillata) em uma árvore do
+                    parque, em 2015 </p>
+                <p>You can see various birds, reptiles, amphibians, and fish in the park. Many of these animals help
+                    spread seeds and control insect populations. Because the park is close to Lake Paranoá and has
+                    preserved Mesophytic Forest areas, there are many bird species. Some abandoned domestic animals,
+                    such as rabbits, tortoises, and turtles, can also be found. The park's isolation from other cerrado
+                    areas limits animal migration, reducing the variety of species.
                 </p>
 
             </div>
         </div>
 
         <div id="atividades">
-            <h1>ATIVIDADES</h1>
-            <h1 style="font-weight: 100; padding-left: 10rem;">PARA LAZER</h1>
+            <h1>LESUIRE</h1>
+            <h1 style="font-weight: 100; padding-left: 10rem;">ACTIVITIES</h1>
             <div class="container-lazer">
                 <div class="container2">
-                    <p id="texto-2">Além de suas visitas diárias, o Parque Olhos D'água recebe 
-                        muitas atividades diversificadas, incluindo eventos culturais, aulas 
-                        de yoga, tai chi chuan e meditação, bem como feiras de trocas de sementes.
+                    <p>In addition to daily visits, Olhos D'Água Park hosts various activities, including cultural
+                        events, yoga classes, tai chi chuan, meditation sessions, and seed exchange fairs.
                     </p>
-                    <p id="texto-2">Em 2010, foi constituído o projeto Vô, Vó Malhar é no Parque, 
-                        com o intuito de levar idosos a frequentar a Academia da Terceira Idade 
-                        (ATI), construída nas dependências do parque. Em 2012, os participantes 
-                        do programa, que era gratuito, recebiam acompanhamento de educadores físicos.
+                    <p>In 2010, the "Vô, Vó Malhar é no Parque" project was launched to encourage elderly people to use
+                        the Senior Fitness Academy (ATI) within the park. In 2012, participants, who could join for
+                        free, received guidance from physical education professionals.
                     </p>
                 </div>
-                
+
                 <div class="container">
-                    <img id="img-sobre" src="./imagens/yoga.png" alt="Sobre Image"/>
-                    <img id="img-sobre" src="./imagens/thumbnail-2.jpg" alt="Sobre Image"/>
-                    <img id="img-sobre" src="./imagens/screen_2x.webp" alt="Sobre Image"/>
+                    <img src="./imagens/yoga.png" alt="Sobre Image" />
+                    <img src="./imagens/thumbnail-2.jpg" alt="Sobre Image" />
+                    <img src="./imagens/screen_2x.webp" alt="Sobre Image" />
                 </div>
             </div>
         </div>
@@ -221,21 +202,22 @@
         <div id="funcionamento">
             <div class="container-lazer">
                 <div class="container2">
-                    <img id="img-sobre" src="./imagens/mapa.png" alt="Sobre Image"/>
+                    <img src="./imagens/mapa.png" alt="Sobre Image" />
                 </div>
-                
+
                 <div class="container">
-                    <p style="font-weight: 100;" id="texto-2"><u>Endereço</u>: Quadra 413 e 414 - Asa Norte, Brasília - DF, 70876-000
+                    <p style="font-weight: 100;"><u>Address</u>: Quadra 413 and 414 - Asa Norte, Brasília - DF,
+                        70876-000
                     </p>
-                    <p style="font-weight: 100;" id="texto-2">Horário de funcionamento:
+                    <p style="font-weight: 100;">Opening Hours:
                     </p>
-                    <p style="font-weight: 100;" id="texto-2">05:30h - 21:00h
+                    <p style="font-weight: 100;">05:30h - 21:00h
                     </p>
-                    <p id="texto-2">Todos os dias
+                    <p>Every day
                     </p>
                 </div>
             </div>
-            <h1 style="font-weight: 100; margin-bottom: 5rem;">FAÇA SUA VISITA!</h1>
+            <h1>COME AND VISIT!</h1>
         </div>
     </main>
 
