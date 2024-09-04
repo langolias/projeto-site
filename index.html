@@ -11,7 +11,742 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, template">
     <meta name="author" content="Your Name">
     <title>Protótipo</title>
-    <link rel="stylesheet" href="estilos.css"> <!-- Link to your CSS file -->
+
+    <style>
+        body,
+        h1,
+        p,
+        ul,
+        li,
+        nav,
+        main,
+        footer {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background-color: #FDFFF3;
+            --dark-back-color: #FDFFF3;
+            --text-color: #333;
+            --text-color-header: #fff;
+            --header-background: #1b2c25;
+            --header-text-color: #fff;
+            --main-background: #FDFFF3;
+            --footer-background: #67729D;
+            --footer-text-color: #fff;
+            --div-background: #191919;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: var(--header-background);
+            color: var(--header-text-color);
+            font-weight: bold;
+            height: auto;
+        }
+
+        lang-select ul,
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        lang-select ul {
+            flex-wrap: wrap;
+        }
+
+        lang-select ul li,
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        lang-select ul li a,
+        nav ul li button {
+            text-decoration: none;
+            color: var(--header-text-color);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        lang-select ul li a:hover,
+        nav ul li button:hover {
+            border-bottom: solid;
+            border-color: var(--header-text-color);
+        }
+
+        lang-select ul li p {
+            color: #ccc;
+            margin: 0 5px;
+        }
+
+        main {
+            border-radius: 5px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        #inicio {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Space between title and image */
+            padding: 1rem;
+            padding-right: 1rem;
+            margin-right: 5rem;
+            margin-left: 5rem;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+            position: relative;
+
+        }
+
+        #titulo-inicio {
+            font-style: italic;
+            padding: 2rem;
+            padding-left: 10rem;
+            font-size: 80px;
+        }
+
+        #sobre {
+            margin: 5rem;
+        }
+
+        #sobre .container {
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row: auto auto;
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                font-size: large;
+                max-width: 90%;
+            }
+
+            img {
+                width: 100%;
+                max-width: 90%;
+            }
+        }
+
+        #mais {
+            background-color: var(--div-background);
+            padding: 5rem;
+            padding-bottom: 0;
+
+            h1 {
+                font-size: 70px;
+                color: #FDFFF3;
+                font-weight: 100;
+                font-style: italic;
+            }
+
+        }
+
+        #mais .container {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 30% 60%;
+            grid-row: auto auto;
+            grid-column-gap: 100px;
+            grid-row-gap: 50px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+
+            p {
+                max-width: 90%;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                color: var(--dark-back-color);
+
+                i#teste {
+                    top: -50px;
+                }
+            }
+
+            img {
+                display: flex;
+                max-width: 90%;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        #estrutura {
+            background-color: var(--div-background);
+            padding: 5rem;
+            padding-top: 0;
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+            }
+        }
+
+        #estrutura .container {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row: auto auto;
+            grid-column-gap: 100px;
+            grid-row-gap: 50px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                max-width: 90%;
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                color: var(--dark-back-color);
+
+                i#teste {
+                    top: -50px;
+                }
+            }
+
+            img {
+                display: flex;
+                max-width: 90%;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        #fotos {
+            background-color: #1b2c25;
+            padding: 5rem;
+        }
+
+        #fotos .container1 {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-row: auto auto;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+            padding-bottom: 0;
+            padding-top: 0;
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+                display: flex;
+                justify-content: center;
+            }
+
+            img {
+                display: flex;
+                max-width: 100%;
+
+            }
+        }
+
+        #fotos .container2 {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-row: auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+            padding-bottom: 0;
+            padding-top: 0;
+
+            img {
+                max-width: 100%;
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+
+        #video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1b2c25;
+            padding-bottom: 5rem;
+        }
+
+        #bio {
+            padding: 5rem;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+        }
+
+        #bio .container {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-row: auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+
+
+            }
+
+            .teste {
+                padding-left: 6rem;
+            }
+
+            img {
+                display: flex;
+                width: 600px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        #fauna {
+            padding: 5rem;
+            padding-top: 0;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+        }
+
+        #fauna .container {
+            align-items: center;
+            justify-content: center;
+            padding: 5rem;
+            padding-top: 0;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row: auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-right: 5rem;
+            margin-left: 5rem;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+
+
+            }
+
+            .teste {
+                padding-right: 8rem;
+            }
+
+            img {
+                display: flex;
+                width: 600px;
+                align-items: center;
+                justify-content: flex-start;
+            }
+        }
+
+        #atividades {
+            padding: 5rem;
+            background-color: var(--div-background);
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            .container-lazer {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        #atividades .container {
+            max-width: 50%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-row: auto auto;
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+            margin-left: 10rem;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                color: var(--dark-back-color);
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+            }
+
+            img {
+                display: flex;
+                width: 190px;
+                height: 500px;
+                align-items: center;
+                justify-content: flex-start;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+
+        #atividades .container2 {
+            max-width: 40%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-row: auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-top: 5rem;
+
+            h1 {
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                color: var(--dark-back-color);
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 25px;
+
+
+            }
+        }
+
+        #funcionamento {
+            padding: 5rem;
+            background-color: var(--div-background);
+
+            h1 {
+                color: var(--dark-back-colorr);
+                font-size: 80px;
+                font-style: italic;
+                font-weight: 100;
+                margin-bottom: 5rem;
+                color: #FDFFF3;
+            }
+
+            .container-lazer {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+        #funcionamento .container {
+            max-width: 50%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-row: auto auto;
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+            margin-left: 10rem;
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                color: var(--dark-back-color);
+                max-width: 100%;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+        }
+
+        #funcionamento .container2 {
+            max-width: 50%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-row: auto auto;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+
+            h1 {
+                color: var(--dark-back-color);
+                font-size: 80px;
+                font-style: italic;
+            }
+
+            p {
+                color: var(--dark-back-color);
+                max-width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+            img {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+
+
+
+        #img-inicio {
+            width: 800px;
+            max-width: 90%;
+            height: auto;
+            object-fit: cover;
+
+        }
+
+        img#tree {
+            width: 35%;
+            margin-right: 5rem;
+            position: absolute;
+            left: -130px;
+            bottom: -150px;
+            z-index: -1;
+            max-width: 100%;
+            transform: rotate(5deg)
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: var(--header-background);
+            color: var(--footer-text-color);
+        }
+
+        body.dark-mode {
+            --background-color: #333;
+            --text-color: #f4f4f4;
+            --header-background: #f4f4f4;
+            --header-text-color: #333;
+            --main-background: #444;
+            --footer-background: #f4f4f4;
+            --footer-text-color: #333;
+        }
+
+        .color-toggle {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .color-toggle:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 1200px) {
+            #inicio {
+                padding: 20px;
+            }
+
+            #titulo-inicio,
+            #titulo-2 {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        @media (max-width: 1900px) {
+            #img-inicio {
+                width: 600px;
+            }
+
+            #fotos .container2 img {
+                max-width: 100%;
+                width: 500px;
+            }
+
+            #mais .container p {
+                font-size: 18px;
+            }
+
+
+            #bio .container {
+                img {
+                    max-width: 100%;
+                }
+
+                .teste {
+                    padding: 0;
+                }
+            }
+
+            #fauna .container {
+                grid-column-gap: 100px;
+                grid-row-gap: 5px;
+
+                img {
+                    max-width: 100%;
+                }
+
+                .teste {
+                    padding: 0;
+                }
+            }
+
+            #fotos .container2 {
+                img {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+
+        }
+
+        @media (max-width: 1820px) {
+
+            #funcionamento .container2 {
+                img {
+                    max-width: 120%;
+                }
+            }
+
+            #fotos .container1 {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+
+        }
+
+
+
+        @media (max-width: 900px) {
+
+            lang-select ul,
+            nav ul {
+                flex-direction: column;
+            }
+
+            lang-select ul li,
+            nav ul li {
+                margin: 5px 0;
+            }
+
+
+
+            #titulo-inicio,
+            #titulo-2 {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            lang-select ul {
+                margin-bottom: 10px;
+            }
+
+
+            #titulo-inicio,
+            #titulo-2 {
+                font-size: 1rem;
+            }
+
+            #texto-2 {
+                font-size: 0.875rem;
+            }
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -148,10 +883,10 @@
         </div>
 
         <div id="video">
-            <iframe width="1128" height="634" src="https://www.youtube.com/embed/xSJKiMQd7CQ"
-                title="Parque Olhos d&#39;Água - Brasília - DF" frameborder="0"
+            <iframe width="1128" height="634" src="https://www.youtube.com/embed/WbUrumyy2Ok"
+                title="Parque Olhos D&#39;agua - Visita Virtual (audiodescrição)" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </iframe>
         </div>
 
