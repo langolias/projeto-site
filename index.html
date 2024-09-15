@@ -339,6 +339,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -389,6 +390,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -745,14 +747,21 @@
             }
 
         }
+
+        #acessibilidade span a{
+            color: #fff; 
+        }
     </style>
 
 </head>
 
 <body>
     <header>
-
+        
         <lang-select>
+            <div style="height: 0px;" id="acessibilidade">
+                <span><a href="#principal">|</a></span>
+            </div>
             <ul>
                 <li><a href="index.html">PT-BR</a></li>
                 <li>
@@ -778,8 +787,10 @@
                 <li><button onclick="guia('atividades');">ATIVIDADES</button></li>
                 <li><button onclick="guia('funcionamento');">FUNCIONAMENTO</button></li>
                 <li>
-                    <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
+                    
 
+                    <label for="color-toggle">Contraste</label>
+                    <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
                     <input type="checkbox" id="color-toggle">
 
                 </li>
@@ -797,35 +808,36 @@
             <img id="img-inicio" src="./imagens/Imagem-do-Parque-Olhos-dagua.png" alt="Park Image" />
         </div>
 
-        <div id="sobre">
-            <div class="container">
-                <h1>Sobre o Parque</h1>
-                <p>O Parque Olhos D'Água é um lugar público para lazer e atividades ao ar livre localizado
-                    na
-                    Asa Norte, em Brasília, no Distrito Federal. É um parque ecológico, o que significa que ele foi
-                    criado
-                    para preservar a natureza e oferecer um espaço agradável para as pessoas aproveitarem a área verde e
-                    a paisagem.
-                </p>
-                <p>O Parque Olhos D'Água foi criado em 1994 e tem uma área de 28 hectares. É um dos lugares
-                    mais
-                    visitados da região. No parque, você pode participar de muitos eventos culturais e fazer atividades
-                    físicas.
-                    Ele preserva a vegetação típica do cerrado e tem um pequeno lago. O parque é administrado pelo
-                    governo do Distrito Federal (GDF).
-                </p>
-                <img src="./imagens/Imagem-2.png" alt="Sobre Image" />
+        <div id="principal">
+            <div id="sobre">
+                <div class="container">
+                    <h1>Sobre o Parque</h1>
+                    <p>O Parque Olhos D'Água é um lugar público para lazer e atividades ao ar livre localizado
+                        na
+                        Asa Norte, em Brasília, no Distrito Federal. É um parque ecológico, o que significa que ele foi
+                        criado
+                        para preservar a natureza e oferecer um espaço agradável para as pessoas aproveitarem a área verde e
+                        a paisagem.
+                    </p>
+                    <p>O Parque Olhos D'Água foi criado em 1994 e tem uma área de 28 hectares. É um dos lugares
+                        mais
+                        visitados da região. No parque, você pode participar de muitos eventos culturais e fazer atividades
+                        físicas.
+                        Ele preserva a vegetação típica do cerrado e tem um pequeno lago. O parque é administrado pelo
+                        governo do Distrito Federal (GDF).
+                    </p>
+                    <img src="./imagens/Imagem-2.png" alt="Sobre Image" />
+                </div>
             </div>
         </div>
 
         <div id="mais">
-            <h1>Um pouco
-                mais da</h1>
-            <h1>
+            <h1 style="color: #fff;">Um pouco mais da</h1>
+            <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: bolder;">
                 história do parque...
-            </h1>
+            </p>
             <div class="container">
-                <p style="text-align: center;">
+                <p style="text-align: center; color: #fff;">
                     <i id="teste" class="fa-solid fa-quote-left"></i>
                     A unidade nasceu da iniciativa da comunidade local, que para chamar
                     a atenção da sociedade e do governo para sua importância, fizeram
@@ -836,7 +848,7 @@
                 </p>
                 <img src="./imagens/Imagem-3.png" alt="Mais Image" />
                 <p></p>
-                <p style="display: flex; align-items: start;">
+                <p style="display: flex; align-items: start; color: #fff;">
                     A Lei nº 556 estabeleceu que o Parque Olhos D'Água tem vários objetivos.
                     Entre eles estão: proteger as nascentes e o lago da SCLN 414/415;
                     preservar e recuperar a vegetação ao redor do lago; proteger a bacia
@@ -850,16 +862,16 @@
 
         <div id="estrutura">
             <div class="container">
-                <p>A área de lazer oferece várias atrações. Você pode usar
+                <p style="color: #fff;">A área de lazer oferece várias atrações. Você pode usar
                     as trilhas para caminhar, aproveitar o parque infantil, fazer
                     exercícios no circuito específico, e usar os banheiros, bebedouros e
                     chuveiros. Também há quiosques, pistas para corrida, e bancos e
                     cadeiras para relaxar ao sol. Além disso, o parque tem lixeiras para
                     coleta seletiva, ajudando na separação dos resíduos.
                 </p>
-                <h1>Estrutura</h1>
+                <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: bolder;">Estrutura</p>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <p>O parque é cercado em todo o seu redor e é supervisionado
+                <p style="color: #fff;">O parque é cercado em todo o seu redor e é supervisionado
                     por policiais do Batalhão Florestal da Polícia Militar do Distrito
                     Federal.
                 </p>
@@ -868,7 +880,7 @@
 
         <div id="fotos">
             <div class="container1">
-                <h1>Fotos</h1>
+                <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: bolder; display: flex; justify-content: center;">Fotos</p>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
 
             </div>
@@ -893,8 +905,8 @@
 
 
         <div id="bio">
-            <h1>BIODIVERSIDADE</h1>
-            <h1 style="font-weight: 100;">FLORA</h1>
+            <p style="font-size: 80px; font-style: italic; font-weight: bolder;">BIODIVERSIDADE</p>
+            <p style="font-size: 80px; font-style: italic; font-weight: 100;">FLORA</p>
             <div class="container">
                 <p>No parque, você encontra principalmente três tipos de vegetação: campo cerrado,
                     mata mesofítica e mata de galeria. Entre as plantas mais comuns, estão as árvores como
@@ -915,7 +927,7 @@
         <div id="fauna">
             <div class="container">
                 <img src="./imagens/Imagem-7.png" alt="Sobre Image" />
-                <h1 style="font-weight: 100;">FAUNA</h1>
+                <p style="font-size: 80px; font-style: italic; font-weight: 100;">FAUNA</p>
                 <p style="text-align: center;" class="teste">Um mico-estrela (Callithrix penicillata) em uma árvore do
                     parque, em 2015 </p>
                 <p>Você pode ver diversas aves, répteis, anfíbios e peixes no parque. Muitos desses animais ajudam a
@@ -930,15 +942,15 @@
         </div>
 
         <div id="atividades">
-            <h1>ATIVIDADES</h1>
-            <h1 style="font-weight: 100; padding-left: 10rem;">PARA LAZER</h1>
+            <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: bolder;">ATIVIDADES</p>
+            <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: 100; padding-left: 10rem;">PARA LAZER</p>
             <div class="container-lazer">
                 <div class="container2">
-                    <p>Além de suas visitas diárias, o Parque Olhos D'água recebe
+                    <p style="color: #fff;">Além de suas visitas diárias, o Parque Olhos D'água recebe
                         muitas atividades diversificadas, incluindo eventos culturais, aulas
                         de yoga, tai chi chuan e meditação, bem como feiras de trocas de sementes.
                     </p>
-                    <p>Em 2010, foi constituído o projeto Vô, Vó Malhar é no Parque,
+                    <p style="color: #fff;">Em 2010, foi constituído o projeto Vô, Vó Malhar é no Parque,
                         com o intuito de levar idosos a frequentar a Academia da Terceira Idade
                         (ATI), construída nas dependências do parque. Em 2012, os participantes
                         do programa, que era gratuito, recebiam acompanhamento de educadores físicos.
@@ -960,18 +972,18 @@
                 </div>
 
                 <div class="container">
-                    <p style="font-weight: 100;"><u>Endereço</u>: Quadra 413 e 414 - Asa Norte, Brasília -
+                    <p style="font-weight: 100; color: #fff;"><u style="color: #fff;">Endereço</u>: Quadra 413 e 414 - Asa Norte, Brasília -
                         DF, 70876-000
                     </p>
-                    <p style="font-weight: 100;">Horário de funcionamento:
+                    <p style="font-weight: 100; color: #fff;">Horário de funcionamento:
                     </p>
-                    <p style="font-weight: 100;">05:30h - 21:00h
+                    <p style="font-weight: 100; color: #fff;">05:30h - 21:00h
                     </p>
-                    <p>Todos os dias
+                    <p style="color: #fff;">Todos os dias
                     </p>
                 </div>
             </div>
-            <h1>FAÇA SUA VISITA!</h1>
+            <p style="color: #fff; font-size: 80px; font-style: italic; font-weight: 100;" style="color: #fff;">FAÇA SUA VISITA!</p>
         </div>
     </main>
 

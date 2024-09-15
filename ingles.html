@@ -28,7 +28,7 @@
         :root {
             --background-color: #FDFFF3;
             --dark-back-color: #FDFFF3;
-            --text-color: #333;
+            --text-color: #000;
             --text-color-header: #fff;
             --header-background: #1b2c25;
             --header-text-color: #fff;
@@ -338,6 +338,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -388,6 +389,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -744,6 +746,11 @@
             }
 
         }
+
+        #acessibilidade span a{
+            color: #fff; 
+        }
+        
     </style>
 </head>
 
@@ -751,6 +758,9 @@
     <header>
 
         <lang-select>
+            <div style="height: 0px;" id="acessibilidade">
+                <span><a href="#principal">|</a></span>
+            </div>
             <ul>
                 <li><a href="index.html">PT-BR</a></li>
                 <li>
@@ -776,6 +786,7 @@
                 <li><button onclick="guia('atividades');">ACTIVITIES</button></li>
                 <li><button onclick="guia('funcionamento');">OPENING HOURS</button></li>
                 <li>
+                    <label for="color-toggle">Contrast</label>
                     <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
 
                     <input type="checkbox" id="color-toggle">
@@ -795,29 +806,31 @@
             <img id="img-inicio" src="./imagens/Imagem-do-Parque-Olhos-dagua.png" alt="Park Image" />
         </div>
 
-        <div id="sobre">
-            <div class="container">
-                <h1>About the Park</h1>
-                <p>Olhos D'Água Park is a public space for recreation and outdoor activities located in Asa Norte,
-                    Brasília, Federal District. As an ecological park, it was created to preserve nature and provide a
-                    pleasant area for people to enjoy green spaces and landscapes.
-                </p>
-                <p>Created in 1994, the park covers 28 hectares and is one of the most visited places in the area. You
-                    can participate in various cultural events and physical activities there. The park preserves the
-                    typical vegetation of the cerrado and features a small lake. It is managed by the Federal District
-                    government (GDF).
-                </p>
-                <img src="./imagens/Imagem-2.png" alt="Sobre Image" />
+        <div id="principal">
+            <div id="sobre">
+                <div class="container">
+                    <h1>About the Park</h1>
+                    <p>Olhos D'Água Park is a public space for recreation and outdoor activities located in Asa Norte,
+                        Brasília, Federal District. As an ecological park, it was created to preserve nature and provide a
+                        pleasant area for people to enjoy green spaces and landscapes.
+                    </p>
+                    <p>Created in 1994, the park covers 28 hectares and is one of the most visited places in the area. You
+                        can participate in various cultural events and physical activities there. The park preserves the
+                        typical vegetation of the cerrado and features a small lake. It is managed by the Federal District
+                        government (GDF).
+                    </p>
+                    <img src="./imagens/Imagem-2.png" alt="Sobre Image" />
+                </div>
             </div>
         </div>
 
         <div id="mais">
-            <h1>A Bit More About</h1>
-            <h1>
+            <h1 style="color: #fff;">A Bit More About</h1>
+            <h1 style="color: #fff;">
                 the Park's History...
             </h1>
             <div class="container">
-                <p style="text-align: center;">
+                <p style="text-align: center; color: #fff;">
                     <i id="teste" class="fa-solid fa-quote-left"></i>
                     The park was established thanks to local community efforts. To draw attention to its importance, the
                     community organized actions such as marches along the Eixão do Lazer and, in 1993, built a Christmas
@@ -826,7 +839,7 @@
                 </p>
                 <img src="./imagens/Imagem-3.png" alt="Mais Image" />
                 <p></p>
-                <p style="display: flex; align-items: start;">
+                <p style="display: flex; align-items: start; color: #fff;">
                     Law No. 556 established several goals for Olhos D'Água Park, including: protecting the springs and
                     lake of SCLN 414/415; preserving and restoring vegetation around the lake; protecting the Paranoá
                     Basin; promoting environmental observation and research programs; ensuring that visitors can enjoy
@@ -837,14 +850,14 @@
 
         <div id="estrutura">
             <div class="container">
-                <p>The park offers a range of amenities. You can use the walking trails, playground, exercise circuit,
+                <p style="color: #fff;">The park offers a range of amenities. You can use the walking trails, playground, exercise circuit,
                     and facilities such as restrooms, drinking fountains, and showers. There are also kiosks, running
                     tracks, and benches for relaxation. Additionally, the park has recycling bins to help with waste
                     separation
                 </p>
-                <h1>Park Features</h1>
+                <h1 style="color: #fff;">Park Features</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <p>The park is fully fenced and supervised by officers from the Environmental Battalion of the Military
+                <p style="color: #fff;">The park is fully fenced and supervised by officers from the Environmental Battalion of the Military
                     Police of the Federal District.
                 </p>
             </div>
@@ -852,7 +865,7 @@
 
         <div id="fotos">
             <div class="container1">
-                <h1>Photos</h1>
+                <h1 style="color: #fff;">Photos</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
 
             </div>
@@ -911,14 +924,14 @@
         </div>
 
         <div id="atividades">
-            <h1>LESUIRE</h1>
-            <h1 style="font-weight: 100; padding-left: 10rem;">ACTIVITIES</h1>
+            <h1 style="color: #fff;">LESUIRE</h1>
+            <h1 style="font-weight: 100; padding-left: 10rem; color: #fff;">ACTIVITIES</h1>
             <div class="container-lazer">
                 <div class="container2">
-                    <p>In addition to daily visits, Olhos D'Água Park hosts various activities, including cultural
+                    <p style="color: #fff;">In addition to daily visits, Olhos D'Água Park hosts various activities, including cultural
                         events, yoga classes, tai chi chuan, meditation sessions, and seed exchange fairs.
                     </p>
-                    <p>In 2010, the "Vô, Vó Malhar é no Parque" project was launched to encourage elderly people to use
+                    <p style="color: #fff;">In 2010, the "Vô, Vó Malhar é no Parque" project was launched to encourage elderly people to use
                         the Senior Fitness Academy (ATI) within the park. In 2012, participants, who could join for
                         free, received guidance from physical education professionals.
                     </p>
@@ -939,18 +952,18 @@
                 </div>
 
                 <div class="container">
-                    <p style="font-weight: 100;"><u>Address</u>: Quadra 413 and 414 - Asa Norte, Brasília - DF,
+                    <p style="font-weight: 100; color: #fff;"><u>Address</u>: Quadra 413 and 414 - Asa Norte, Brasília - DF,
                         70876-000
                     </p>
-                    <p style="font-weight: 100;">Opening Hours:
+                    <p style="font-weight: 100; color: #fff;">Opening Hours:
                     </p>
-                    <p style="font-weight: 100;">05:30h - 21:00h
+                    <p style="font-weight: 100; color: #fff;">05:30h - 21:00h
                     </p>
-                    <p>Every day
+                    <p style="color: #fff;">Every day
                     </p>
                 </div>
             </div>
-            <h1>COME AND VISIT!</h1>
+            <h1 style="color: #fff;">COME AND VISIT!</h1>
         </div>
     </main>
 

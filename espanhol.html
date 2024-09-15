@@ -338,6 +338,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -388,6 +389,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -744,6 +746,11 @@
             }
 
         }
+
+        #acessibilidade span a{
+            color: #fff; 
+        }
+
     </style>
 </head>
 
@@ -751,6 +758,9 @@
     <header>
 
         <lang-select>
+            <div style="height: 0px;" id="acessibilidade">
+                <span><a href="#principal">|</a></span>
+            </div>
             <ul>
                 <li><a href="index.html">PT-BR</a></li>
                 <li>
@@ -776,6 +786,7 @@
                 <li><button onclick="guia('atividades');">ACTIVIDADES</button></li>
                 <li><button onclick="guia('funcionamento');">FUNCIONAMIENTO</button></li>
                 <li>
+                    <label for="color-toggle">Contraste</label>
                     <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
 
                     <input type="checkbox" id="color-toggle">
@@ -813,12 +824,12 @@
         </div>
 
         <div id="mais">
-            <h1>Un Poco Más Sobre</h1>
-            <h1>
+            <h1 style="color: #fff;">Un Poco Más Sobre</h1>
+            <h1 style="color: #fff;">
                 la Historia del Parque...
             </h1>
             <div class="container">
-                <p style="text-align: center;">
+                <p style="text-align: center; color: #fff;">
                     <i id="teste" class="fa-solid fa-quote-left"></i>
                     El parque nació gracias a los esfuerzos de la comunidad local. Para llamar la atención sobre su
                     importancia, la comunidad organizó acciones como marchas por el Eixão do Lazer y, en 1993, construyó
@@ -827,7 +838,7 @@
                 </p>
                 <img src="./imagens/Imagem-3.png" alt="Mais Image" />
                 <p></p>
-                <p style="display: flex; align-items: start;">
+                <p style="display: flex; align-items: start; color: #fff;">
                     La Ley No. 556 estableció varios objetivos para el Parque Olhos D'Água, entre ellos: proteger los
                     manantiales y el lago de la SCLN 414/415; preservar y restaurar la vegetación alrededor del lago;
                     proteger la Cuenca del Paranoá; promover programas de observación e investigación sobre el medio
@@ -839,14 +850,14 @@
 
         <div id="estrutura">
             <div class="container">
-                <p>El parque ofrece una variedad de instalaciones. Puedes utilizar las rutas de senderismo, el parque
+                <p style="color: #fff;">El parque ofrece una variedad de instalaciones. Puedes utilizar las rutas de senderismo, el parque
                     infantil, el circuito de ejercicios y las instalaciones como baños, bebederos y duchas. También hay
                     quioscos, pistas para correr y bancos para relajarse. Además, el parque cuenta con contenedores de
                     reciclaje para ayudar con la separación de residuos.
                 </p>
-                <h1>CARACTERÍSTICAS DEL PARQUE</h1>
+                <h1 style="color: #fff;">CARACTERÍSTICAS DEL PARQUE</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <p>El parque está completamente cercado y supervisado por oficiales del Batallón Ambiental de la Policía
+                <p style="color: #fff;">El parque está completamente cercado y supervisado por oficiales del Batallón Ambiental de la Policía
                     Militar del Distrito Federal.
                 </p>
             </div>
@@ -854,7 +865,7 @@
 
         <div id="fotos">
             <div class="container1">
-                <h1>Imágens</h1>
+                <h1 style="color: #fff;">Imágens</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
 
             </div>
@@ -878,7 +889,7 @@
 
 
         <div id="bio">
-            <h1>BIODIVERSITY</h1>
+            <h1>BIODIVERSIDAD</h1>
             <h1 style="font-weight: 100;">FLORA</h1>
             <div class="container">
                 <p>El parque cuenta con tres tipos principales de vegetación: campo cerrado, bosque mesofítico y bosque
@@ -915,15 +926,15 @@
         </div>
 
         <div id="atividades">
-            <h1>ACTIVIDADES</h1>
-            <h1 style="font-weight: 100; padding-left: 10rem;">RECREATIVAS</h1>
+            <h1 style="color: #fff;">ACTIVIDADES</h1>
+            <h1 style="font-weight: 100; padding-left: 10rem; color: #fff;">RECREATIVAS</h1>
             <div class="container-lazer">
                 <div class="container2">
-                    <p>Además de las visitas diarias, el Parque Olhos D'Água acoge diversas actividades, incluyendo
+                    <p style="color: #fff;">Además de las visitas diarias, el Parque Olhos D'Água acoge diversas actividades, incluyendo
                         eventos culturales, clases de yoga, tai chi chuan, sesiones de meditación y ferias de
                         intercambio de semillas.
                     </p>
-                    <p>En 2010, se lanzó el proyecto "Vô, Vó Malhar é no Parque" con el objetivo de animar a los
+                    <p style="color: #fff;">En 2010, se lanzó el proyecto "Vô, Vó Malhar é no Parque" con el objetivo de animar a los
                         ancianos a utilizar la Academia de la Tercera Edad (ATI) ubicada en el parque. En 2012, los
                         participantes, que podían unirse de forma gratuita, recibían orientación de profesionales en
                         educación física.
@@ -945,18 +956,18 @@
                 </div>
 
                 <div class="container">
-                    <p style="font-weight: 100;"><u>Dirección</u>: Quadra 413 y 414 - Asa Norte, Brasília - DF,
+                    <p style="font-weight: 100; color: #fff;"><u>Dirección</u>: Quadra 413 y 414 - Asa Norte, Brasília - DF,
                         70876-000
                     </p>
-                    <p style="font-weight: 100;">Horario de Funcionamiento:
+                    <p style="font-weight: 100; color: #fff;">Horario de Funcionamiento:
                     </p>
-                    <p style="font-weight: 100;">05:30h - 21:00h
+                    <p style="font-weight: 100; color: #fff;">05:30h - 21:00h
                     </p>
-                    <p>Todos los días
+                    <p style="color: #fff;">Todos los días
                     </p>
                 </div>
             </div>
-            <h1>¡VEN Y VISÍTANOS!</h1>
+            <h1 style="color: #fff;">¡VEN Y VISÍTANOS!</h1>
         </div>
     </main>
 

@@ -338,6 +338,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -388,6 +389,7 @@
             margin-left: 5rem;
 
             h1 {
+                color: var(--text-color);
                 font-size: 80px;
                 font-style: italic;
             }
@@ -744,6 +746,11 @@
             }
 
         }
+
+        #acessibilidade span a{
+            color: #fff; 
+        }
+
     </style>
 </head>
 
@@ -751,6 +758,9 @@
     <header>
 
         <lang-select>
+            <div style="height: 0px;" id="acessibilidade">
+                <span><a href="#principal">|</a></span>
+            </div>
             <ul>
                 <li><a href="index.html">PT-BR</a></li>
                 <li>
@@ -776,6 +786,7 @@
                 <li><button onclick="guia('atividades');">ACTIVITÉS</button></li>
                 <li><button onclick="guia('funcionamento');">FONCTIONNEMENT</button></li>
                 <li>
+                    <label for="color-toggle">Contraste</label>
                     <i class="fa-solid fa-circle-half-stroke" alt="contraste"></i>
 
                     <input type="checkbox" id="color-toggle">
@@ -813,12 +824,12 @@
         </div>
 
         <div id="mais">
-            <h1>Un Peu Plus Sur</h1>
-            <h1>
+            <h1 style="color: #fff;">Un Peu Plus Sur</h1>
+            <h1 style="color: #fff;">
                 l’Histoire du Parc...
             </h1>
             <div class="container">
-                <p style="text-align: center;">
+                <p style="text-align: center; color: #fff;">
                     <i id="teste" class="fa-solid fa-quote-left"></i>
                     Le parc a été créé grâce aux efforts de la communauté locale. Pour attirer l'attention sur son
                     importance, la communauté a organisé des actions telles que des marches le long de l'Eixão do Lazer
@@ -828,7 +839,7 @@
                 </p>
                 <img src="./imagens/Imagem-3.png" alt="Mais Image" />
                 <p></p>
-                <p style="display: flex; align-items: start;">
+                <p style="display: flex; align-items: start; color: #fff;" >
                     La Loi No. 556 a établi plusieurs objectifs pour le Parc Olhos D'Água, notamment : protéger les
                     sources et le lac des SCLN 414/415 ; préserver et restaurer la végétation autour du lac ; protéger
                     le bassin du Paranoá ; promouvoir des programmes d'observation et de recherche sur l'environnement
@@ -840,14 +851,14 @@
 
         <div id="estrutura">
             <div class="container">
-                <p>Le parc offre diverses installations. Vous pouvez utiliser les sentiers de randonnée, l'aire de jeux
+                <p style="color: #fff;">Le parc offre diverses installations. Vous pouvez utiliser les sentiers de randonnée, l'aire de jeux
                     pour enfants, le circuit d'exercice et les équipements tels que les toilettes, les fontaines à eau
                     et les douches. Il y a aussi des kiosques, des pistes de course et des bancs pour se détendre. De
                     plus, le parc est équipé de poubelles de tri pour aider à la séparation des déchets.
                 </p>
-                <h1>Caractéristiques du Parc</h1>
+                <h1 style="color: #fff;">Caractéristiques du Parc</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
-                <p>Le parc est entièrement clôturé et supervisé par des officiers du Bataillon Environnemental de la
+                <p style="color: #fff;">Le parc est entièrement clôturé et supervisé par des officiers du Bataillon Environnemental de la
                     Police Militaire du District Fédéral.
                 </p>
             </div>
@@ -855,7 +866,7 @@
 
         <div id="fotos">
             <div class="container1">
-                <h1>Photos</h1>
+                <h1 style="color: #fff;">Photos</h1>
                 <img src="./imagens/Imagem-4.png" alt="Sobre Image" />
 
             </div>
@@ -916,15 +927,15 @@
         </div>
 
         <div id="atividades">
-            <h1>ACTIVITÉS</h1>
-            <h1 style="font-weight: 100; padding-left: 10rem;">DE LOISIRS</h1>
+            <h1 style="color: #fff;">ACTIVITÉS</h1>
+            <h1 style="font-weight: 100; padding-left: 10rem; color: #fff;">DE LOISIRS</h1>
             <div class="container-lazer">
                 <div class="container2">
-                    <p>En plus des visites quotidiennes, le Parc Olhos D'Água accueille diverses activités, notamment
+                    <p style="color: #fff;">En plus des visites quotidiennes, le Parc Olhos D'Água accueille diverses activités, notamment
                         des événements culturels, des cours de yoga, de tai chi chuan, des séances de méditation et des
                         foires d'échange de semences.
                     </p>
-                    <p>En 2010, le projet "Vô, Vó Malhar é no Parque" a été lancé pour encourager les personnes âgées à
+                    <p style="color: #fff;">En 2010, le projet "Vô, Vó Malhar é no Parque" a été lancé pour encourager les personnes âgées à
                         utiliser la Salle de Fitness Senior (ATI) située dans le parc. En 2012, les participants, qui
                         pouvaient rejoindre gratuitement, bénéficiaient de l'accompagnement de professionnels en
                         éducation physique.
@@ -946,17 +957,17 @@
                 </div>
 
                 <div class="container">
-                    <p style="font-weight: 100;"><u>Adresse</u>: Quadra 413 et 414 - Asa Norte, Brasília - DF, 70876-000
+                    <p style="font-weight: 100; color: #fff;"><u>Adresse</u>: Quadra 413 et 414 - Asa Norte, Brasília - DF, 70876-000
                     </p>
-                    <p style="font-weight: 100;">Horaires d'Ouverture:
+                    <p style="font-weight: 100; color: #fff;">Horaires d'Ouverture:
                     </p>
-                    <p style="font-weight: 100;">05:30h - 21:00h
+                    <p style="font-weight: 100; color: #fff;">05:30h - 21:00h
                     </p>
-                    <p>Tous les jours
+                    <p style="color: #fff;">Tous les jours
                     </p>
                 </div>
             </div>
-            <h1>VENEZ NOUS RENDRE VISITE!</h1>
+            <h1 style="color: #fff;">VENEZ NOUS RENDRE VISITE!</h1>
         </div>
     </main>
 
